@@ -14,6 +14,6 @@ view: fct_players_by_college {
   # }
   measure: player_count {
     type: number
-    sql: ${TABLE}."PLAYER_COUNT" ;;
+    sql: sum(${TABLE}."PLAYER_COUNT");;
   }
 }
