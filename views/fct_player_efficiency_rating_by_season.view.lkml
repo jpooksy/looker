@@ -1,7 +1,7 @@
 view: fct_player_efficiency_rating_by_season {
   sql_table_name: "WAREHOUSE"."FCT_PLAYER_EFFICIENCY_RATING_BY_SEASON" ;;
 
-  dimension: player_efficiency_rating {
+  measure: player_efficiency_rating {
     type: number
     sql: ${TABLE}."PLAYER_EFFICIENCY_RATING" ;;
   }
@@ -16,9 +16,5 @@ view: fct_player_efficiency_rating_by_season {
   dimension: season {
     type: string
     sql: ${TABLE}."SEASON" ;;
-  }
-  measure: count {
-    type: count
-    drill_fields: [player_name]
   }
 }
