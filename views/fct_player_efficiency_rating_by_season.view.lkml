@@ -3,7 +3,7 @@ view: fct_player_efficiency_rating_by_season {
 
   measure: player_efficiency_rating {
     type: number
-    sql: ${TABLE}."PLAYER_EFFICIENCY_RATING" ;;
+    sql: sum(${TABLE}."PLAYER_EFFICIENCY_RATING") ;;
   }
   dimension: player_id {
     type: number
