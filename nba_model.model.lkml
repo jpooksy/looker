@@ -10,3 +10,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 explore: players_by_college {
   view_name: fct_players_by_college
 }
+
+explore: fct_player_efficiency_rating_by_season {
+  view_name: fct_player_efficiency_rating_by_season
+}
